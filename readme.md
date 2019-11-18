@@ -1,6 +1,6 @@
 ## Setting up the React Native app on your local machine
 
-1.  Go to https://facebook.github.io/react-native/docs/getting-started, click on "Building Projects with Native Code" tab, then, in "Target OS", click on either iOS or Android tab to follow instructions to set up your React Native environment for both platforms.
+1.  Go to https://facebook.github.io/react-native/docs/getting-started, click on the "React Native CLI Quickstart" tab, then, in "Development OS" tabs, click on either iOS or Android tab to follow instructions to set up your React Native environment for both platforms.
 
 2.  open up a terminal, `npm install -g react-native-cli`(depending on your admin settings, you might need to run `sudo npm install -g react native-cli` instead) to install React Native's command line utility.
 
@@ -8,17 +8,43 @@
 
 4. CD in the ios folder, run `sudo gem install cocoapods`, then run `pod install`
 
+
 ## Running your project on iOS Simulator or Android Emulator
 
 For iOS: run `react-native run-ios`
 
 For Android: make sure you have your Andriod Emulator open, either in Android Studio or GenyMotion, then run `react-native run-android`
 
-## Setting up 
+## Setting up MS App Center
+
+
+## React Native third-party libraries
+
+Icons: 
+`react-native-vector-icons`
+`react-native-svg` (for converting custom svgs to use on mobile)
+
+CSS Component Libraries: 
+`react-native-elements`, https://react-native-elements.github.io/react-native-elements/docs/getting_started.html
+`native-base`, https://nativebase.io/
+
+Camera:
+`react-native-camera`
+`react-native-image-picker`
+`react-native-image-crop-picker`
+Keep in mind, you cannot test the camera on the iOS Simulator, you will need to run your build on a real device to test (alternatively, Android Emulators can use your machine's camera to test)
+
+Input Keyboard Scrollview library:
+`react-native-input-scroll-view`, https://github.com/baijunjie/react-native-input-scroll-view
+This library is not quite as mature, but it takes care of scrollview offsets nicely when keyboard is showing
 
 ## React Navigation documentation and dependencies
 
 https://reactnavigation.org/docs/en/getting-started.html
+
+for React Native version 0.60 or higher, linking is automatic
+
+### Libraries and Dependencies
 
 `react-navigation`
 `react-native-gesture-handler`
@@ -28,3 +54,4 @@ https://reactnavigation.org/docs/en/getting-started.html
 ### Optional libraries
 
 `react-navigation-stack`
+`react-navigation-tabs`

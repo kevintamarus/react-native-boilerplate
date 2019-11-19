@@ -1,10 +1,14 @@
+## XCode version
+
+Use Xcode 11 (on macs, Catalina OS will need to be installed). Alternatively, if you don't want to upgrade your OS, you will have to use Xcode 10
+
 ## Setting up the React Native app on your local machine
 
-1.  Go to https://facebook.github.io/react-native/docs/getting-started, click on the "React Native CLI Quickstart" tab, then, in "Development OS" tabs, click on either iOS or Android tab to follow instructions to set up your React Native environment for both platforms.
+1. Go to https://facebook.github.io/react-native/docs/getting-started, click on the "React Native CLI Quickstart" tab, then, in "Development OS" tabs, click on either iOS or Android tab to follow instructions to set up your React Native environment for both platforms.
 
-2.  open up a terminal, `npm install -g react-native-cli`(depending on your admin settings, you might need to run `sudo npm install -g react native-cli` instead) to install React Native's command line utility.
+2. Open up a terminal, `npm install -g react-native-cli`(depending on your admin settings, you might need to run `sudo npm install -g react native-cli` instead) to install React Native's command line utility.
 
-3.  clone the this repo, then CD(change directory) into this project, run: `npm install`.
+3. Clone the this repo, then CD(change directory) into this project, run: `npm install`.
 
 4. CD in the ios folder, run `sudo gem install cocoapods`, then run `pod install`
 
@@ -15,7 +19,10 @@ For iOS: run `react-native run-ios`
 
 For Android: make sure you have your Andriod Emulator open, either in Android Studio or GenyMotion, then run `react-native run-android`
 
+
 ## Setting up MS App Center
+
+https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/react-native
 
 
 ## React Native third-party libraries
@@ -39,7 +46,7 @@ For Android: make sure you have your Andriod Emulator open, either in Android St
 
 `react-native-image-crop-picker`, https://github.com/ivpusic/react-native-image-crop-picker
 
-Keep in mind, you cannot test the camera on the iOS Simulator, you will need to run your build on a real device to test (alternatively, Android Emulators can use your machine's camera to test)
+Keep in mind, you cannot test the camera on the iOS Simulator, you will need to run your build on a real device to test (Android Emulators are able to use your machine's camera to test)
 
 ### Input Keyboard Scrollview library:
 

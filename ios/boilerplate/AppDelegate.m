@@ -19,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [AppCenterReactNative register];
+  [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];
+  [AppCenterReactNativeCrashes registerWithAutomaticProcessing];
+  
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"boilerplate"
@@ -42,9 +46,5 @@
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
 }
-
-[AppCenterReactNative register];
-[AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];
-[AppCenterReactNativeCrashes registerWithAutomaticProcessing];
 
 @end

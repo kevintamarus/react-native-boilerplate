@@ -20,6 +20,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+AppCenter-Config.plist
 
 # Android/IntelliJ
 #

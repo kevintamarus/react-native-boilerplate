@@ -24,6 +24,17 @@ For Android: make sure you have your Andriod Emulator open, either in Android St
 
 https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/react-native
 
+### iOS
+
+follow instructions for the App Center docs for React Native 0.60.  You'll have to sign the app in xcode and change the bundle identifier to a unique
+
+Before commiting your changes after you created a `AppCenter-Config.plist` file, add `AppCenter-Config.plist` into your `XCode` section of `.gitignore` so you won't commit the App Center secret key
+
+### Android
+
+follow instructions for the App Center docs for React Native 0.60.
+
+Before commiting your changes after you created a `appcenter-config.json` file, add `assets` into your `Android/IntelliJ` section of `.gitignore` so you won't commit the App Center secret key
 
 ## React Native third-party libraries
 
